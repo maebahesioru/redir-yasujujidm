@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>移動しました</title>
+<script>
+  // 旧ドメインのディープリンク（パス付きURL）をパスを保持したまま新ドメインへ転送
+  window.location.replace('https://yasujujidm.hikamers.app' + location.pathname + location.search);
+</script>
+</head>
+<body>
+<p>このページは <strong>yasujujidm.hikamers.app</strong> に移動しました。</p>
+<p><a id="moved-link" href="https://yasujujidm.hikamers.app">移動する</a></p>
+<script>
+  document.getElementById('moved-link').href = 'https://yasujujidm.hikamers.app' + location.pathname + location.search;
+</script>
+</body>
+</html>
